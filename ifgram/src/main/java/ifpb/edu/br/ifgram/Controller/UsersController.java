@@ -1,15 +1,29 @@
 package ifpb.edu.br.ifgram.Controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("users")
+@RequestMapping("kaue")
 public class UsersController {
 
     @GetMapping
     public String getUser () {
-        return "get user was called";
+        return "meu nome é Kauê";
+    }
+    @PutMapping
+    public String putUser () {
+        return "chamei meu endpoint como um put";
+    }
+    @PatchMapping
+    public String patchUser () {
+        return "chamei meu endpoint como um patch";
+    }
+    @PostMapping
+    public String postUser () {
+        return "chamei meu endpoint como um post";
+    }
+    @DeleteMapping
+    public String deleteUser () {
+        return "chamei meu endpoint como um delete";
     }
 }
