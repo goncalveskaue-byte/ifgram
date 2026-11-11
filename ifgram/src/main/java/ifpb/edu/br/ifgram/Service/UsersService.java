@@ -1,7 +1,7 @@
 package ifpb.edu.br.ifgram.Service;
 
-import ifpb.edu.br.ifgram.Controller.UserResponse;
 import ifpb.edu.br.ifgram.Dto.UserRequest;
+import ifpb.edu.br.ifgram.Dto.UserResponse;
 import ifpb.edu.br.ifgram.Model.User;
 import ifpb.edu.br.ifgram.Repository.UserRepository;
 import jakarta.transaction.Transactional;
