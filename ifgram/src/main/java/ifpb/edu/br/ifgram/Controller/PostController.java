@@ -36,7 +36,7 @@ public class PostController {
     }
 
     @PostMapping
-    public ResponseEntity<PostResponse> criar(@Valid @RequestBody PostRequest request) {
+    public ResponseEntity<PostResponse> criar(@Valid @RequestBody PostRequest request) throws Exception{
         PostResponse response = postService.criar(request);
         return ResponseEntity.status(HttpStatus.CREATED).body(response);
     }
